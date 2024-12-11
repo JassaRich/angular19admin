@@ -1,0 +1,32 @@
+<div class="d-flex flex-column flex-shrink-0 p-3 bg-primary text-white" style="width: 250px; height: 100vh;">
+  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+    <span class="fs-4">Admin Panel</span>
+  </a>
+  <hr>
+  <ul class="nav nav-pills flex-column mb-auto">
+    <li class="nav-item">
+      <a [routerLink]="'/dashboard'" class="nav-link text-white active">
+        <i class="fas fa-chart-line me-2"></i> Dashboard
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="'/users'" class="nav-link text-white">
+        <i class="fas fa-users me-2"></i> Users
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="'/reports'" class="nav-link text-white">
+        <i class="fas fa-file-alt me-2"></i> Reports
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="'/settings'" class="nav-link text-white">
+        <i class="fas fa-cogs me-2"></i> Settings
+      </a>
+    </li>
+  </ul>
+  <hr>
+  <div class="text-center">
+    <button class="btn btn-outline-light btn-sm w-100" (click)="toggleDarkMode()">Toggle Dark Mode</button>
+  </div>
+</div>

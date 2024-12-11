@@ -1,0 +1,25 @@
+body {
+    background-color: #f8f9fa;
+  }
+  
+  .card {
+    border-radius: 15px;
+  }
+  
+  .btn-primary {
+    background: linear-gradient(90deg, #1e90ff, #00c6ff);
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(90deg, #00c6ff, #1e90ff);
+  }
+  
+  a.text-primary {
+    text-decoration: none;
+  }
+  
+  a.text-primary:hover {
+    text-decoration: underline;
+  }
+  

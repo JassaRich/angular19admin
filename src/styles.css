@@ -1,0 +1,78 @@
+/* You can add global styles to this file, and also import other style files */
+
+  
+  .nav-link.active {
+    background-color: #007bff;
+    color: white !important;
+  }
+  
+  body {
+    background-color: #f8f9fa;
+  }
+  
+  .card {
+    border-radius: 15px;
+  }
+  
+  .bg-gradient-primary {
+    background: linear-gradient(90deg, #1e90ff, #00c6ff);
+  }
+  
+  .bg-gradient-success {
+    background: linear-gradient(90deg, #28a745, #6abf69);
+  }
+  
+  .bg-gradient-warning {
+    background: linear-gradient(90deg, #ffc107, #ffdd57);
+  }
+  
+  .bg-gradient-danger {
+    background: linear-gradient(90deg, #dc3545, #ff6b6b);
+  }
+  
+  .list-group-item {
+    border: none;
+    background-color: #f8f9fa;
+  }
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  .bg-primary {
+    background: linear-gradient(90deg, #1e90ff, #00c6ff); /* Matches dashboard card colors */
+  }
+  body.dark-mode {
+    background-color: #343a40; /* Dark mode background */
+    color: #ffffff; /* Text color */
+  }
+  
+  body.dark-mode .bg-primary {
+    background: linear-gradient(90deg, #2c3e50, #4a69bd); /* Dark gradient */
+  }
+  
+  body.dark-mode .card {
+    background-color: #495057; /* Dark card background */
+    color: #ffffff;
+  }
+  
+  body.dark-mode .nav-link {
+    color: #adb5bd;
+  }
+  
+  body.dark-mode .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  body.dark-mode .btn-outline-light {
+    border-color: #adb5bd;
+    color: #adb5bd;
+  }
+  
+  body.dark-mode .btn-outline-light:hover {
+    background-color: #adb5bd;
+    color: #2c3e50;
+  }

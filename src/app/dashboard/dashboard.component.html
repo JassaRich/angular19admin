@@ -1,0 +1,103 @@
+<div class="row g-4">
+  <div class="col-md-3">
+    <div class="card shadow-sm border-0 bg-gradient-primary text-white">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center">
+          <h5>Total Users</h5>
+          <i class="fas fa-users fa-2x"></i>
+        </div>
+        <h3 class="mt-3">1,234</h3>
+        <p class="mb-0">+10% from last month</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card shadow-sm border-0 bg-gradient-success text-white">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center">
+          <h5>Total Sales</h5>
+          <i class="fas fa-dollar-sign fa-2x"></i>
+        </div>
+        <h3 class="mt-3">$45,678</h3>
+        <p class="mb-0">+5% from last week</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card shadow-sm border-0 bg-gradient-warning text-white">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center">
+          <h5>Active Tasks</h5>
+          <i class="fas fa-tasks fa-2x"></i>
+        </div>
+        <h3 class="mt-3">76</h3>
+        <p class="mb-0">+15 tasks this week</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card shadow-sm border-0 bg-gradient-danger text-white">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center">
+          <h5>Alerts</h5>
+          <i class="fas fa-bell fa-2x"></i>
+        </div>
+        <h3 class="mt-3">9</h3>
+        <p class="mb-0">Critical: 2</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-header">Sales Overview</div>
+        <div class="card-body">
+            <apx-chart
+            [series]="chartSeries"
+            [chart]="chartOptions"
+            [xaxis]="xAxis">
+          </apx-chart>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-header">User Growth</div>
+        <div class="card-body">
+            <apx-chart
+            [series]="lineChart.series"
+            [chart]="chart"
+            [xaxis]="lineChart.xaxis">
+          </apx-chart>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card mt-4 shadow-sm">
+    <div class="card-header d-flex justify-content-between align-items-center">
+      <h5>User Management</h5>
+      <input type="text" class="form-control w-25" placeholder="Search...">
+    </div>
+    <div class="card-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td>{{ user.id }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.role }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
